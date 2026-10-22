@@ -1,8 +1,8 @@
-# PokéDex Plus – Komplett Konsept
+# PokePlus – Komplett Konsept
 
 ## Bedriftsidé
 
-PokéDex Plus er en digital plattform for Pokémon-spillere som samler Pokédex-sporing, shiny-samlinger, lagbygging og konkurranseverktøy på ett sted. Målet er å gjøre det enklere for spillere å holde oversikt over fremgangen sin uten å måtte bruke flere forskjellige nettsider.
+PokePlus er en digital plattform for Pokémon-spillere som samler Pokédex-sporing, shiny-samlinger, lagbygging og konkurranseverktøy på ett sted. Målet er å gjøre det enklere for spillere å holde oversikt over fremgangen sin uten å måtte bruke flere forskjellige nettsider.
 
 ---
 
@@ -16,7 +16,7 @@ Pokémon-spillere må ofte bruke flere forskjellige nettsider og apper for å:
 - Holde styr på shiny-samlinger
 - Eksportere lag til Pokémon Showdown
 
-PokéDex Plus samler alle disse funksjonene i én brukervennlig webapplikasjon.
+PokePlus samler alle disse funksjonene i én brukervennlig webapplikasjon.
 
 ---
 
@@ -30,13 +30,6 @@ PokéDex Plus samler alle disse funksjonene i én brukervennlig webapplikasjon.
 - Konkurransespillere
 - Pokémon Showdown-spillere
 
-## Persona
-
-**Emil, 16 år**
-
-Spiller Pokémon Scarlet og Pokémon Showdown. Han ønsker å holde oversikt over hvilke Pokémon han har fanget, hvilke shinies han eier og bygge lag uten å bruke flere forskjellige nettsider samtidig.
-
----
 
 # Assosiasjoner vi ønsker å skape
 
@@ -55,7 +48,7 @@ Spiller Pokémon Scarlet og Pokémon Showdown. Han ønsker å holde oversikt ove
 
 ## Navn
 
-**PokéDex Plus**
+**PokePlus**
 
 ## Slagord
 
@@ -81,7 +74,7 @@ Spiller Pokémon Scarlet og Pokémon Showdown. Han ønsker å holde oversikt ove
 
 # Offisiell konseptbeskrivelse
 
-> Vi skal starte bedriften **PokéDex Plus**, som er en digital Pokémon-plattform med Pokédex-sporing, lagbygging og samlingsverktøy. Løsningen har en moderne webapp og en tydelig gaming-inspirert visuell profil rettet mot Pokémon-spillere og samlere. Tjenesten skal ha et oversiktlig og teknologisk design med fokus på enkel progresjonssporing, lagbygging og rask tilgang til Pokémon-data.
+> Vi skal starte bedriften **PokePlus**, som er en digital Pokémon-plattform med Pokédex-sporing, lagbygging og samlingsverktøy. Løsningen har en moderne webapp og en tydelig gaming-inspirert visuell profil rettet mot Pokémon-spillere og samlere. Tjenesten skal ha et oversiktlig og teknologisk design med fokus på enkel progresjonssporing, lagbygging og rask tilgang til Pokémon-data.
 
 ---
 
@@ -119,7 +112,7 @@ Eksempler:
 - Pokémon Shield
 - Pokémon GO
 
-PokéDex Plus viser kun Pokémonene som finnes i det valgte spillet.
+PokePlus viser kun Pokémonene som finnes i det valgte spillet.
 
 ---
 
@@ -257,7 +250,7 @@ abcdefghijklmnopqrstuvwxyzæøå
 
 - Pokéball-symbol
 - Gul og blå fargepalett
-- Tekst: PokéDex Plus
+- Tekst: PokePlus
 
 ## Sort/Hvit-versjon
 
