@@ -1,0 +1,156 @@
+:root {
+    --bg: #1E293B;
+    --bg50: #1e293b86;
+    --main: #FFCB05;
+    --main50: #FFCB0586;
+    --secondary: #3B82F6;
+    --secondary50: #3B82F686;
+    --text: #F8FAFC;
+    --text50: #F8FAFC86;
+}
+
+html,
+body {
+    background-color: var(--bg);
+    scrollbar-width: thin;
+    scrollbar-color: var(--main50) var(--bg);
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+    transform: translateY(-2px) scale(1.08);
+    filter: drop-shadow(0 0 10px var(--main50));
+}
+
+.logo:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: color-mix(in srgb, var(--) 20%, transparent);
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 2px solid color-mix(in srgb, var(--) 40%, transparent);
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10; 
+}
+
+.navbar li a {
+    text-decoration: none;
+    color:var(--text);
+    display: block;
+    text-align: center;
+    transition: 0.3s ease-out;
+}
+
+.navbar li a:hover {
+    color: var(--main);
+}
+
+.nav-link {
+    border-radius: 5px;
+    border-left:2px solid color-mix(in srgb, var(--main) 40%, transparent);
+    background-color: color-mix(in srgb, var(--bg) 20%, transparent);
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 300px;
+    height: 100vh;
+    margin: 0;
+    padding: 100px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    transition: right 0.4s ease-out;
+    backdrop-filter: blur(4px);
+}
+
+#nav-menu {
+    margin-left: auto;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+    transition: transform 0.4s ease-out;
+    z-index: 100; 
+    color: var(--text);
+}
+
+.nav-link.active {
+    right:0;
+}
+
+.nav-title {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: white;
+    margin: 0;
+
+    transition: 0.3s ease;
+}
+
+.nav-title span {
+    color: var(--main);
+    text-shadow: 0 0 8px color-mix(in srgb, var(--main) 60%, transparent);
+}
+
+.nav-title:hover {
+    transform: translateX(3px);
+}
+
+.nav-btn {
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid var(--text);
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.2s ease,
+        box-shadow 0.25s ease;
+}
+
+.nav-btn:hover {
+    background: transparent;
+    color: var(--main);
+    box-shadow: 0 0 15px color-mix(in srgb, var(--main) 50%, transparent);
+    transform: translateY(-2px);
+    border: 2px solid var(--main);
+}
+
+.nav-btn:active {
+    transform: translateY(0);
+}
+
+.nav-btn:focus-visible {
+    outline: 2px solid var(--main);
+    outline-offset: 3px;
+}
