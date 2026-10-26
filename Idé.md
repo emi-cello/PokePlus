@@ -230,7 +230,8 @@ RGB: 248, 250, 252
 
 ## Font
 
-Poppins
+Poppins  |  Headings
+Inter    |  Body
 
 ### Alfabet
 

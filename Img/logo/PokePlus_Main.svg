@@ -1,0 +1,26 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1401 1401" width="1401" height="1401">
+	<style>
+		.s0 { fill: #cfd0d0 } 
+		.s1 { fill: #ededed } 
+		.s2 { fill: #f3f3f3 } 
+		.s3 { fill: #e6e7e7 } 
+		.s4 { fill: #ffcb05 } 
+		.s5 { fill: #ffde61 } 
+		.s6 { fill: #ffd533 } 
+		.s7 { fill: #f2c726 } 
+	</style>
+	<g id="main">
+		<g id="Botom">
+			<path id="Sircle-Corer copy" fill-rule="evenodd" class="s0" d="m565 1285c-149.31 0-270-120.69-270-270h270z"/>
+			<path id="Sircle-Corer copy 2" fill-rule="evenodd" class="s1" d="m835 745c0 149.31-120.69 270-270 270v-270z"/>
+			<path id="Shape 1" fill-rule="evenodd" class="s2" d="m565 475v270h-270v-270z"/>
+			<path id="Shape 1 copy 3" fill-rule="evenodd" class="s3" d="m565 745v270h-270v-270z"/>
+		</g>
+		<g id="Top">
+			<path id="Shape 1 copy" fill-rule="evenodd" class="s4" d="m835 205v270h-270v-270z"/>
+			<path id="Shape 1 copy 2" fill-rule="evenodd" class="s5" d="m1105 475v270h-270v-270z"/>
+			<path id="Sircle-Corer copy 4" fill-rule="evenodd" class="s6" d="m835 205c149.31 0 270 120.69 270 270h-270z"/>
+			<path id="Sircle-Corer copy 3" fill-rule="evenodd" class="s7" d="m565 475c-149.31 0-270-120.69-270-270h270z"/>
+		</g>
+	</g>
+</svg>
