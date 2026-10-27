@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Builder</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/builder.css">
+    <script src="../js/script.js"></script>
+    <script src="../js/builder.js" defer></script>
+</head>
+<body>
+    <header>
+    <nav class="navbar">        
+        <div class="nav-title">Poke<span>Plus</span></div>
+        <h1 class="nav-btn">Home</h1>
+        <h1 class="nav-btn">About</h1>
+        <h1 class="nav-btn">Account</h1>
+            </div>
+            <ul id="menu" class="nav-link">
+                <li><a href="#">PokeDex</a></li>
+                <li><a href="#">Team Builder</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">About</a></li>
+                <li class="credits"><a>Made By - Emi-Cello</a></li>
+            </ul>
+        <button id="nav-menu" onclick="toggleMenu()" aria-label="Toggle navigation">
+            <img class="logo" src="../Img/logo/PokePlus_Main.png">
+        </button>
+    </nav>
+    </header>
+    <main class="team-builder">
+        <h1>Team Builder</h1>
+        <div class="team-layout">
+            <div class="team-slots">
+                <div class="team-slot" data-slot="0">+</div>
+                <div class="team-slot" data-slot="1">+</div>
+                <div class="team-slot" data-slot="2">+</div>
+                <div class="team-slot" data-slot="3">+</div>
+                <div class="team-slot" data-slot="4">+</div>
+                <div class="team-slot" data-slot="5">+</div>
+            </div>
+            <div class="pokemon-editor">
+                <input id="pokemon-search" type="text" placeholder="Search Pokémon...">
+                <button class="search-btn" onclick="searchPokemon()">
+                    Search
+                </button>
+                <img id="pokemon-preview" src="" alt="">
+                <h2 id="pokemon-name"></h2>
+                <div id="pokemon-types"></div>
+                <div class="moves-container">
+                    <div class="move-picker">
+                        <input id="move1" class="move-search" type="text" placeholder="Move 1" autocomplete="off">
+                        <div class="move-list" id="move1-list"></div>
+                    </div>
+                    <div class="move-picker">
+                        <input id="move2" class="move-search" type="text" placeholder="Move 2" autocomplete="off">
+                        <div class="move-list" id="move2-list"></div>
+                    </div>
+                    <div class="move-picker">
+                        <input id="move3" class="move-search" type="text" placeholder="Move 3" autocomplete="off">
+                        <div class="move-list" id="move3-list"></div>
+                    </div>
+                    <div class="move-picker">
+                        <input id="move4" class="move-search" type="text" placeholder="Move 4" autocomplete="off">
+                        <div class="move-list" id="move4-list"></div>
+                    </div>
+                </div>
+                <ul id="move-suggestions"></ul>
+                <button class="add-team-btn" onclick="addToTeam()">
+                    Add To Team
+                </button>
+            </div>
+        </div>
+        <button class="export-btn" onclick="exportTeam()">
+            Export Showdown Team
+        </button>
+        <textarea id="export-output" rows="12"></textarea>
+    </main>
+</body>
+</html>
