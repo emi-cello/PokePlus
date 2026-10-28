@@ -48,6 +48,21 @@
                 <img id="pokemon-preview" src="" alt="">
                 <h2 id="pokemon-name"></h2>
                 <div id="pokemon-types"></div>
+                <div class="ability-picker">
+                    <input id="ability" class="ability-search" placeholder="Select Ability" autocomplete="off">
+                    <div class="ability-list" id="ability-list"></div>
+                </div>
+                <div class="item-picker">
+                    <input id="held-item" class="item-search" placeholder="Select Held Item" autocomplete="off">
+                    <div class="item-list" id="item-list"></div>
+                </div>
+                <div class="item-preview">
+                    <img id="item-icon" src="" alt="">
+                    <div>
+                        <h3 id="item-name"></h3>
+                        <p id="item-description"></p>
+                    </div>
+                </div>
                 <div class="moves-container">
                     <div class="move-picker">
                         <input id="move1" class="move-search" type="text" placeholder="Move 1" autocomplete="off">
@@ -67,6 +82,59 @@
                     </div>
                 </div>
                 <ul id="move-suggestions"></ul>
+                <label>Level</label>
+                <input id="pokemon-level" type="number" min="1" max="100" value="100">
+                <label class="shiny-toggle">
+                    <input id="pokemon-shiny" type="checkbox">
+                    Shiny
+                </label>
+                <select id="tera-type">
+                <option>Normal</option>
+                <option>Fire</option>
+                <option>Water</option>
+                <option>Electric</option>
+                <option>Grass</option>
+                <option>Ice</option>
+                <option>Fighting</option>
+                <option>Poison</option>
+                <option>Ground</option>
+                <option>Flying</option>
+                <option>Psychic</option>
+                <option>Bug</option>
+                <option>Rock</option>
+                <option>Ghost</option>
+                <option>Dragon</option>
+                <option>Dark</option>
+                <option>Steel</option>
+                <option>Fairy</option>
+                </select>
+                <div class="ev-grid">
+                <input id="ev-hp" placeholder="HP" value="0">
+                <input id="ev-atk" placeholder="Atk" value="0">
+                <input id="ev-def" placeholder="Def" value="0">          
+                <input id="ev-spa" placeholder="SpA" value="0">
+                <input id="ev-spd" placeholder="SpD" value="0">
+                <input id="ev-spe" placeholder="Spe" value="0">
+                </div>
+                <div class="iv-grid">
+                <input id="iv-hp" value="31">
+                <input id="iv-atk" value="31">
+                <input id="iv-def" value="31">
+                <input id="iv-spa" value="31">
+                <input id="iv-spd" value="31">
+                <input id="iv-spe" value="31">
+                </div>
+                <select id="nature">
+                    <option>Hardy</option>
+                    <option>Adamant</option>
+                    <option>Modest</option>
+                    <option>Jolly</option>
+                    <option>Timid</option>
+                    <option>Bold</option>
+                    <option>Careful</option>
+                    <option>Impish</option>
+                    <option>Calm</option>
+                </select>
                 <button class="add-team-btn" onclick="addToTeam()">
                     Add To Team
                 </button>
@@ -76,6 +144,10 @@
             Export Showdown Team
         </button>
         <textarea id="export-output" rows="12"></textarea>
+        <textarea id="import-team" placeholder="Paste Showdown Team Here"></textarea>
+        <button onclick="importTeam()">
+            Import Team
+        </button>
     </main>
 </body>
 </html>
