@@ -41,11 +41,14 @@
                 <div class="team-slot" data-slot="5">+</div>
             </div>
             <div class="pokemon-editor">
-                <input id="pokemon-search" type="text" placeholder="Search Pokémon...">
+                <div class="pokemon-search-wrapper">
+                    <input id="pokemon-search" type="text" placeholder="Search Pokémon..." autocomplete="off">
+                    <div id="pokemon-suggestions"></div>
+                </div>
                 <button class="search-btn" onclick="searchPokemon()">
                     Search
                 </button>
-                <img id="pokemon-preview" src="" alt="">
+                <img id="pokemon-preview" src="../Img/Pokeball_red.svg" alt="">
                 <h2 id="pokemon-name"></h2>
                 <div id="pokemon-types"></div>
                 <div class="ability-picker">
@@ -57,7 +60,7 @@
                     <div class="item-list" id="item-list"></div>
                 </div>
                 <div class="item-preview">
-                    <img id="item-icon" src="" alt="">
+                    <img id="item-icon" src="../Img/Pokeball_red.svg" alt="">
                     <div>
                         <h3 id="item-name"></h3>
                         <p id="item-description"></p>

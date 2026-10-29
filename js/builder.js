@@ -21,6 +21,61 @@ document.addEventListener("DOMContentLoaded", () => {
     loadItems();
 });
 
+let pokemonList = [];
+
+async function loadPokemonList() {
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=1302");
+    const data = await response.json();
+    pokemonList = data.results;
+}
+
+document.addEventListener("DOMContentLoaded",async () => {
+        await loadPokemonList();
+        setupPokemonSearch();
+    }
+);
+
+function setupPokemonSearch() {
+    const input = document.getElementById("pokemon-search");
+    const suggestions = document.getElementById("pokemon-suggestions");
+    input.addEventListener("input",() => {
+            const search = input.value.toLowerCase();
+            suggestions.innerHTML = "";
+            if (!search) {
+                suggestions.style.display = "none";
+                return;
+            }
+            const matches = pokemonList.filter(p => p.name.includes(search)).slice(0, 10);
+            matches.forEach(pokemon => {
+                const id = pokemon.url.split("/").filter(Boolean).pop();
+                const div = document.createElement("div");
+                div.className = "pokemon-suggestion";
+                div.innerHTML = `
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png">
+                    <span>
+                        ${pokemon.name}
+                    </span>
+                `;
+                div.onclick = () => {
+                    input.value = pokemon.name;
+                    suggestions.style.display = "none";
+                    searchPokemon();
+                };
+                suggestions.appendChild(div);
+            });
+            suggestions.style.display = matches.length
+                ? "block"
+                : "none";
+        }
+    );
+}
+
+document.getElementById("pokemon-search").addEventListener("keydown",e => {
+    if (e.key === "Enter") {
+        searchPokemon();
+    }
+});
+
 async function loadItems() {
     const response = await fetch("https://pokeapi.co/api/v2/item?limit=3000");
     const data = await response.json();

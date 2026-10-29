@@ -382,6 +382,43 @@
     accent-color: var(--main);
 }
 
+.pokemon-search-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+#pokemon-suggestions {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    right: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    background: var(--bg);
+    border: 2px solid var(--secondary50);
+    border-radius: 12px;
+    display: none;
+    z-index: 9999;
+}
+
+.pokemon-suggestion {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.pokemon-suggestion:hover {
+    background: color-mix(in srgb,var(--main) 15%,transparent);
+}
+
+.pokemon-suggestion img {
+    width: 40px;
+    height: 40px;
+}
+
 
 
 
