@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/info.css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="../js/info.js" defer></script>
+<script src="../js/script.js" defer></script>
+<title>Pokemon Info</title>
+</head>
+<body>
+ <header>
+    <nav class="navbar">        
+        <div class="nav-title">Poke<span>Plus</span></div>
+        <h1 class="nav-btn">Home</h1>
+        <h1 class="nav-btn">About</h1>
+        <h1 class="nav-btn">Account</h1>
+            </div>
+            <ul id="menu" class="nav-link">
+                <li><a href="#">PokeDex</a></li>
+                <li><a href="#">Team Builder</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">About</a></li>
+                <li class="credits"><a>Made By - Emi-Cello</a></li>
+            </ul>
+        <button id="nav-menu" onclick="toggleMenu()" aria-label="Toggle navigation">
+            <img class="logo" src="../Img/logo/PokePlus_Main.png">
+        </button>
+    </nav>
+    </header>
+    <div class="container">
+        <div class="search-bar">
+            <input id="pokemon-search" placeholder="Search Pokémon...">
+            <button onclick="searchPokemon()">
+                Search
+            </button>
+    </div>
+    <section class="pokemon-card">
+    <div class="pokemon-art">
+        <img id="pokemon-image" src="../Img/Pokeball_red.svg">
+    </div>
+    <div>
+        <h1 class="pokemon-name" id="pokemon-name">Bulbasaur</h1>
+        <p class="dex-number" id="pokemon-number">#001</p>
+        <div id="pokemon-types" class="type-container"></div>
+            <div class="controls">
+                <button id="shiny-btn">
+                    Shiny: Off
+                </button>
+                <select id="form-select">
+                </select>
+            </div>
+        </div>
+    </section>
+    <div class="card">
+        <h2>Pokédex Entry</h2>
+        <p id="dex-entry">
+            Loading...
+        </p>
+    </div>
+    <div class="card">
+        <h2>Abilities</h2>
+        <div id="abilities">
+    </div>
+    </div>
+    <div class="card">
+        <h2>Base Stats</h2>
+        <div id="stats">
+        </div>
+    </div>
+    </div>
+</body>
+</html>

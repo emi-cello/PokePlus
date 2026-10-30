@@ -1,0 +1,121 @@
+:root {
+    --bg: #1E293B;
+    --main: #FFCB05;
+    --secondary: #3B82F6;
+    --text: #F8FAFC;
+    --text50: #F8FAFC86;
+}
+
+body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:Inter,sans-serif;
+}
+
+h1{
+    text-align:center;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+    padding:20px;
+}
+
+.controls{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.controls select,
+.controls input{
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    background:rgba(255,255,255,.05);
+    color:var(--text);
+}
+
+.progress-card{
+    background:rgba(255,255,255,.05);
+    padding:20px;
+    border-radius:16px;
+    margin-bottom:20px;
+}
+
+.progress-bar{
+    height:20px;
+    border-radius:999px;
+    overflow:hidden;
+    background:rgba(255,255,255,.08);
+}
+
+.progress-fill{
+    height:100%;
+    width:0%;
+    background:var(--main);
+    transition:.3s;
+}
+
+.dex-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+    gap:15px;
+}
+
+.dex-card{
+    background:rgba(255,255,255,.05);
+    border-radius:16px;
+    padding:15px;
+    text-align:center;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.dex-card:hover{
+    transform:translateY(-3px);
+}
+
+.dex-card img{
+    width:96px;
+    height:96px;
+}
+
+.dex-card.seen{
+    border:2px solid var(--secondary);
+}
+
+.dex-card.caught{
+    border:2px solid #35d66b;
+}
+
+.dex-card.shiny{
+    border:2px solid gold;
+    box-shadow:0 0 15px gold;
+}
+
+#dex-select option {
+    background-color: var(--bg);
+}
+
+.mode-buttons{
+    display:flex;
+    gap:10px;
+}
+
+.mode-buttons button{
+    padding:10px 15px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:rgba(255,255,255,.05);
+    color:white;
+}
+
+.mode-buttons button.active{
+    background:var(--main);
+    color:black;
+}

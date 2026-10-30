@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/dex.css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="../js/dex.js" defer></script>
+<script src="../js/script.js" defer></script>
+<title>PokeDex</title>
+</head>
+<body>
+     <header>
+    <nav class="navbar">        
+        <div class="nav-title">Poke<span>Plus</span></div>
+        <h1 class="nav-btn">Home</h1>
+        <h1 class="nav-btn">About</h1>
+        <h1 class="nav-btn">Account</h1>
+            </div>
+            <ul id="menu" class="nav-link">
+                <li><a href="#">PokeDex</a></li>
+                <li><a href="#">Team Builder</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">About</a></li>
+                <li class="credits"><a>Made By - Emi-Cello</a></li>
+            </ul>
+        <button id="nav-menu" onclick="toggleMenu()" aria-label="Toggle navigation">
+            <img class="logo" src="../Img/logo/PokePlus_Main.png">
+        </button>
+    </nav>
+    </header>
+    <div class="container">
+        <h1>PokePlus Dex</h1>
+        <div class="controls">
+            <select id="dex-select">
+            </select>
+            <input id="search" placeholder="Search Pokémon...">
+            <div class="mode-buttons">
+                <button id="seen-btn" class="active">Seen</button>
+                <button id="caught-btn">Caught</button>
+                <button id="shiny-btn">Shiny</button>
+            </div>
+        </div>
+        <div class="progress-card">
+            <h3 id="progress-text">0 / 1025</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </div>
+        <div class="dex-grid" id="dex-grid"></div>
+    </div>
+</body>
+</html>
