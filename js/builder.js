@@ -150,13 +150,13 @@ async function loadMoveInfo(moveName, element) {
     let categoryImage = "";
 
     if (move.damage_class.name === "physical")
-        categoryImage = "../img/PhysicalMove.png";
+        categoryImage = "https://github.com/emi-cello/PokePlus/blob/main/Img/PhysicalMove.png?raw=true";
 
     if (move.damage_class.name === "special")
-        categoryImage = "../img/SpecialMove.png";
+        categoryImage = "https://github.com/emi-cello/PokePlus/blob/main/Img/SpecialMove.png?raw=true";
 
     if (move.damage_class.name === "status")
-        categoryImage = "../img/StatusMove.png";
+        categoryImage = "https://github.com/emi-cello/PokePlus/blob/main/Img/StatusMove.png?raw=true";
 
     element.innerHTML = `
         <div class="move-title">
